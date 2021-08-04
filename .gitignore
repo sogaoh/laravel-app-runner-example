@@ -6,7 +6,7 @@
 /appBase/*/node_modules/
 /appBase/*/npm-debug.log
 /appBase/*/yarn-error.log
-/appBase/*/storage/*
+/appBase/*/storage/*.key
 /appBase/*/.env
 /appBase/*/.phpunit.result.cache
 /appBase/.env

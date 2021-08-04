@@ -3,7 +3,7 @@
 
 ## Get Started
 
-1. Set project name to create-project.yml volumes.
+1. Set project name to create-project.yml volumes.  
    (example) lara-sample
 
 ```
