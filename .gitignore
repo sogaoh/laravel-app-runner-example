@@ -1,0 +1,13 @@
+.idea
+.DS_Store
+
+### Laravel
+/appBase/*/vendor/
+/appBase/*/node_modules/
+/appBase/*/npm-debug.log
+/appBase/*/yarn-error.log
+/appBase/*/storage/*
+/appBase/*/.env
+/appBase/*/.phpunit.result.cache
+/appBase/.env
+/appBase/.envrc
