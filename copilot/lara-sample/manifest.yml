@@ -8,15 +8,10 @@ name: lara-sample
 type: Request-Driven Web Service
 
 image:
-  # Docker build arguments.
-  # For additional overrides: https://aws.github.io/copilot-cli/docs/manifest/rd-web-service/#image-build
+  # The name of the Docker image.
+  location: ${AWS_ACCOUNT_ID}.dkr.ecr.ap-northeast-1.amazonaws.com/sogaoh-app/lara-sample:latest
   # Port exposed through your container to route traffic to it.
-  build:
-    dockerfile: appBase/ship/docker/php/Dockerfile
-    context: appBase
-    args:
-      TZ: Asia/Tokyo
-      PHP_MODE: production
+  port: 80
 
 # http:
 #   healthcheck:
@@ -35,12 +30,13 @@ memory: 2048
 #
 # variables:                    # Pass environment variables as key value pairs.
 #   LOG_LEVEL: info
+
 variables:
   APP_NAME: Laravel
   APP_ENV: development
   APP_KEY: ${your_app_key}
   APP_DEBUG: false
-  APP_URL: https://
+  APP_URL: https://z4hjxrdduj.ap-northeast-1.awsapprunner.com/
   LOG_CHANNEL: stack-container
   LOG_LEVEL: info
 
