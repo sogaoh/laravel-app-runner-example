@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  app:
+    image: sogaoh-app/lara-sample:latest
+    ports:
+      - 9011:80
+    env_file:
+      - ./.env
