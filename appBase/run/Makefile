@@ -19,6 +19,8 @@ up:
 	docker-compose up -d
 upb:
 	docker-compose up -d --build
+upa:
+	docker-compose -f ./docker-compose_apache.yml up -d
 down:
 	docker-compose down --remove-orphans
 prune:
