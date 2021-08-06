@@ -17,6 +17,7 @@ image:
     args:
       TZ: Asia/Tokyo
       PHP_MODE: production
+  port: 80
 
 # http:
 #   healthcheck:
